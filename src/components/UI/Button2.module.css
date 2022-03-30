@@ -1,0 +1,18 @@
+button {
+    color: #282930;
+    border: 2px solid #000000;
+    background: #05755F;
+    border-radius: 30px;
+    width: 10vw;
+    height: 2rem
+}
+
+button:hover {
+    border: 2px solid #dfdfdf;
+    background: #25957F;
+}
+
+button:active {
+    border: 2px solid #000000;
+    background : #00654f
+}

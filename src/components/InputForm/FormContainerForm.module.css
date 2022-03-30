@@ -1,0 +1,25 @@
+.form-control label{
+    font-weight: bold;
+    display : block;
+    margin: 1em 0 0 0;
+}
+
+.form-control input{
+    display: block;
+    width: 30vw;
+    margin: 0.5em 0 0.5em 0 ;
+}
+
+.form-submit {
+    text-align: right;
+}
+
+.form-control .invalid {
+    border-color: salmon
+}
+
+@media (max-width: 768px) {
+    .form-control input {
+        width: 95vw;
+    }
+}

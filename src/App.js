@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import style from "./App.module.css";
+import FormContainer from "./components/InputForm/FormContainer.js";
+import ListContainer from "./components/InputList/ListContainer.js";
+import { useState } from "react";
 
 function App() {
+  const [userList, setUserList] = useState([]);
+
+  const inputHandler = (inputData) => {
+    setUserList((prevState) => {
+      return [...prevState, inputData];
+    });
+  };
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style.main}>
+      <div style={{ width: "50vw" }}>
+        <FormContainer onInput={inputHandler}  />
+        <ListContainer userList={userList} />
+      </div>
     </div>
   );
 }

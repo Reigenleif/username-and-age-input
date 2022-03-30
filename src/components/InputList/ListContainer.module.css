@@ -1,0 +1,37 @@
+.list-container.empty {
+    padding : 0.25rem;
+    height: 10em;
+    text-align: center;
+    font-style: italic;
+}
+
+.list-container.filled{
+    height: 10em;
+    text-align: center;
+    font-style: italic;
+    flex-flow: column wrap; 
+    align-items: center;
+    padding : 0 0 0 2vw;
+    justify-content: flex-start;
+    
+}
+
+.list-container div{
+    height : 1.4em;
+    width : 30vw;
+    margin : 0 0 1% 0;
+    display: table-cell;
+    vertical-align: middle;
+    border: 0.5px solid black;
+}
+
+.list-container-noinput {
+    padding : 0.25 rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .list-container{
+        width: 95vw;
+    }
+}
