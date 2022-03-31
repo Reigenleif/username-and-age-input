@@ -1,6 +1,7 @@
 import Card from "../UI/Card";
 import Button2 from "../UI/Button2";
 
+
 const ErrorPopup = (props) => {
   return (
     <Card style={{ borderColor: "salmon", flexDirection: "column", alignItems:"center", width:"40vw" }}>
